@@ -1,13 +1,14 @@
 const parseCode = (str) => {
   // your code here
 
-	let [firstName,lastName,id]=str.split("000");
-	let obj={
-		firstName:firstName,
-		lastName:lastName,
-		id:id
-	}
-	return obj;
+	const [firstName, lastName, id] = str.split("000");
+
+  // Create and return the object with firstName, lastName, and id properties
+  return {
+    firstName: firstName,
+    lastName: lastName,
+    id: id
+  };
 	
 	/*let firstName="";
 	let lastName="";
