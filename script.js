@@ -1,7 +1,13 @@
 const parseCode = (str) => {
   // your code here
+	let [firstName,lastName,id]=str.split(/00*/g);
+	return {
+		firstName:firstName,
+		lastName:lastName,
+		id:id
+	}
 
-	let arr=str.split("0");
+/*	let arr=str.split("0");
 	let newArr=[];
 	for(let eachOne of arr){
 		if(eachOne!=""){
@@ -15,6 +21,7 @@ const parseCode = (str) => {
 	}
 	
 	return obj;
+	*/
 };
 
 // Do not change the code below
