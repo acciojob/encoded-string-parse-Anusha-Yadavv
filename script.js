@@ -1,10 +1,18 @@
 const parseCode = (str) => {
   // your code here
-	let firstName="";
+
+	let [firstName,lastName,id]=str.split("000");
+	let obj={
+		firstName:firstName,
+		lastName:lastName,
+		id:id
+	}
+	return obj;
+	
+	/*let firstName="";
 	let lastName="";
 	let id;
 	let obj={};
-	let n=str.length;
 	let arr=str.split("0");
 	let newArr=[];
 	for(let eachOne of arr){
@@ -21,6 +29,7 @@ const parseCode = (str) => {
 		obj[lastName]=lastName;
 		obj[id]=id;
 	return obj;
+	*/
 	
 	
 	
